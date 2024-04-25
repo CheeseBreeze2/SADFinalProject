@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylebook.css') }}">
+</head>
+
+<body>
+    <h1>Book a Room</h1>
+    <form action="/submit_reservation" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="checkin">Check-In Date:</label>
+        <input type="date" id="checkin" name="check_in" required><br><br>  <!-- Corrected name -->
+
+        <label for="checkout">Check-Out Date:</label>
+        <input type="date" id="checkout" name="check_out" required><br><br>  <!-- Corrected name -->
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="room_type" required>  <!-- Corrected name -->
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Reservation">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleconfirm.css') }}">
+</head>
+
+<body>
+    <h1>Confirmation Page</h1>
+    <div class="confirmation-message">
+        <p>Dear {{ name }}:</p>
+        <div class="message-content">
+            <p>Thank you for choosing Panther Hotel. We are pleased to confirm your room reservation {{ checkin }} to {{ checkout }}.</p>
+            <p>We look forward to seeing you soon.</p>
+        </div>
+    </div>
+    <a href="{{ url_for('home') }}" class="back-home">Back to Home</a>
+</body>
+
+</html>

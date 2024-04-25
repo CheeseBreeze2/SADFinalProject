@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #003594; /* Blue background color */
+    color: #FFBB81; /* Yellow text color */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,8 +21,8 @@ h1 {
 }
 
 button {
-    background-color: blue;
-    color: white;
+    background-color: #FFBB81; /* Yellow background color */
+    color: #003594; /* Blue text color */
     padding: 15px 60px;
     border: none;
     border-radius: 15px;
@@ -30,4 +32,9 @@ button {
     font-weight: bold;
     margin: 0 10px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #B58600; /* Darker yellow background color on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
